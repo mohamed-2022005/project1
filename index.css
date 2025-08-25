@@ -1,0 +1,288 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+header .container{
+  width: 100%;
+  background-color: #e7eaf6;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px 0;
+}
+
+header .container img{
+  width: 200px;
+  max-width: 90%;
+}
+
+header nav{
+  display: flex;
+  gap: 25px;
+  font-size: 20px;
+}
+
+header nav .bar{
+  display: none;
+}
+
+header nav .tel{
+  color: blue;
+}
+
+header nav a{
+  text-decoration: none;
+}
+
+header nav a:hover{
+  color: blue;
+}
+
+header i{
+  padding: 0 20px;
+}
+
+@media screen and (max-width: 767px){
+  header nav a,
+  header nav .fa-search{
+    display: none;
+  }
+  header nav .bar{
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+  }
+}
+
+aside{
+  width: 100%;
+  background-color: #e7eaf6;
+  padding: 150px 0;
+}
+
+aside .container{
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+aside .container h2{
+  font-size: 80px;
+  @media screen and (max-width: 767px){
+      font-size: 50px;
+  }
+  
+}
+
+aside .container p{
+  font-size: 30px;
+  width: 400px;
+  max-width: 100%;
+  text-align: justify;
+  @media screen and (max-width: 767px){
+      font-size: 25px;
+       padding: 10px 0;
+  }
+}
+.boxs{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 40px 0;
+  
+  flex-wrap: wrap;
+  
+  .box{
+    width: 450px;
+    max-width: 80%;
+    height: 250px;
+    background-color: #f2f2f2;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    i{
+      font-size: 30px;
+      color: blue;
+      
+    }
+    h2{
+      font-size: 30px;
+    }
+    a{
+      text-decoration: none;
+      font-size: 22px;
+      font-weight: bold;
+    }
+    p{
+      width: 300px;
+   
+    }
+  }
+}
+
+.hero-section{
+  .container{
+     display: flex;
+  justify-content: center;
+  gap: 100px;
+  flex-wrap: wrap;
+
+  }
+  
+  iframe{
+    width: 700px;
+    max-width: 90%;
+    height: 650px;
+  }
+  h2{
+    font-size: 35px;
+  }
+  p{
+    font-size: 22px;
+    text-align: center;
+    padding: 10px 0;
+  }
+   .input{
+    width: 500px;
+    max-width: 70%;
+    padding: 50px 0;
+    form{
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      
+    }
+    label{
+      font-size: 25px;
+    }
+    
+    input{
+        outline: 0;
+        border: none;
+        font-size: 15px;
+        padding:  0 10px;
+        border-bottom: 1px solid black;
+        padding-bottom: 15px;
+        
+      }
+    }
+  
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+
+  background-color: black;
+  color: white;
+  padding: 60px 40px;
+  gap: 40px;
+  flex-wrap: wrap;
+  
+}
+@media screen and (max-width: 768px) {
+  footer {
+    
+    flex-direction: column; 
+  }
+
+}
+footer h2{
+    border-bottom: 1px white solid;
+    padding-bottom: 5px;
+}
+
+footer .left img {
+  width: 180px;
+  max-width: 80%;
+}
+
+
+footer .left h1 {
+  width: 400px;
+  max-width: 80%;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+  padding: 15px 0;
+}
+
+footer .left a {
+  color: white;
+  text-decoration: none;
+}
+footer .left a:hover {
+  color: rgb(47, 47, 161);
+}
+
+  
+
+
+
+footer .center h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+
+}
+
+footer .center ul {
+  list-style: none;
+  padding: 0;
+}
+footer .center ul li {
+  margin: 8px 0;
+}
+footer .center ul li a {
+  color: white;
+  text-decoration: none;
+}
+footer .center ul li a:hover {
+  color: rgb(47, 47, 161);
+}
+
+footer .right h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+footer .right p {
+  margin: 10px 0;
+  font-size: 15px;
+}
+footer .right i {
+  margin-right: 8px;
+  color: rgb(47, 47, 161);
+}
+.footer{
+  padding: 20px 0;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 700px;
+  flex-wrap: wrap;
+  @media screen and (max-width: 768px) {
+     display: none;
+  }
+}
+
+.footer p{
+  color: white;
+}
+.footer nav{
+  display: flex;
+  gap: 10px;
+  a{
+    text-decoration: none;
+
+  }
+}
