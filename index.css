@@ -81,8 +81,8 @@ aside .container h2{
 
 aside .container p{
   font-size: 30px;
-  width: 400px;
-  max-width: 100%;
+  width: 300px;
+  max-width: 80%;
   text-align: justify;
   @media screen and (max-width: 767px){
       font-size: 25px;
@@ -96,7 +96,6 @@ aside .container p{
   align-items: center;
   gap: 20px;
   padding: 40px 0;
-  
   flex-wrap: wrap;
   
   .box{
@@ -125,6 +124,8 @@ aside .container p{
     }
     p{
       width: 300px;
+      max-width: 70%;
+    
    
     }
   }
@@ -146,6 +147,7 @@ aside .container p{
   }
   h2{
     font-size: 35px;
+   
   }
   p{
     font-size: 22px;
@@ -181,19 +183,18 @@ aside .container p{
 footer {
   display: flex;
   justify-content: space-around;
-
   background-color: black;
   color: white;
   padding: 60px 40px;
   gap: 40px;
-  flex-wrap: wrap;
   
 }
 @media screen and (max-width: 768px) {
   footer {
-    
-    flex-direction: column; 
+   
+    flex-direction: column;
   }
+
 
 }
 footer h2{
@@ -262,18 +263,22 @@ footer .right i {
   color: rgb(47, 47, 161);
 }
 .footer{
-  padding: 20px 0;
+  padding: 50px 100px;
   width: 100%;
   background-color: black;
   display: flex;
-  justify-content: center;
+  justify-content: space-between; /* يخلي العناصر تتوزع صح */
   align-items: center;
-  gap: 700px;
   flex-wrap: wrap;
-  @media screen and (max-width: 768px) {
-     display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+  .footer {
+    display: none;
   }
 }
+
 
 .footer p{
   color: white;
@@ -285,4 +290,7 @@ footer .right i {
     text-decoration: none;
 
   }
+}
+body {
+  overflow-x: hidden;
 }
